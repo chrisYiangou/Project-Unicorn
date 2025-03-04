@@ -1,17 +1,21 @@
+import os
 import streamlit as st
 import requests
 import pandas as pd
 import plotly.express as px
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Backend API URL
-API_URL = "https://project-unicorn.onrender.com"
+API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 # Streamlit UI
 st.title("Google Trends Forecasting App 🚀")
 st.write("Enter a keyword to see historical and predicted trends.")
 
 # User Input
-keyword = st.text_input("Enter Search Term", "AI")
+keyword = st.text_input("Enter Search Term", "Outsystems")
 periods = st.slider("Forecast Days", 7, 90, 30)
 
 if st.button("Get Forecast"):
