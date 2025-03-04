@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # Backend API URL
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://project-unicorn.onrender.com"
 
 # Streamlit UI
 st.title("Google Trends Forecasting App 🚀")
