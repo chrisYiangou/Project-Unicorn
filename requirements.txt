@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pytrends
+prophet
+pandas
+plotly
+requests
+streamlit
